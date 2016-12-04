@@ -4,7 +4,9 @@
 	var sliderHeight = slider.offsetHeight;
 	var elem = document.getElementById('header');
 
-
+	if(window.onscroll) {
+		console.log("scroll")
+	}
 	window.onscroll = function() {
 		//Навігація
   		var scrolled = window.pageYOffset || document.documentElement.scrollTop;
@@ -18,7 +20,7 @@
 
   		//Паралакс
   		textBlock.setAttribute("style", "transform: translate(0%, " + -scrolled/2 +"px " + ")");
-  		slider.style.backgroundPosition = "0% " + scrolled*2 + "%";
+  		slider.style.backgroundPosition = "0% " + -scrolled/2 + "px";
 
 	}
 })();

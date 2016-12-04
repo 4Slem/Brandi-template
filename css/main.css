@@ -73,8 +73,9 @@
   background-image: url(../images/slider.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: 100%;
+  background-attachment: fixed;
+  box-shadow: inset 0 -50px 50px rgba(0, 0, 0, 0.4); }
 
 .header-slider__item {
   position: absolute;
@@ -172,9 +173,11 @@ body {
   background-color: #fff;
   box-shadow: 0 0 3px #999; }
   .scroll-header .nav a {
+    transition: color .5s;
     color: #062033;
     padding: 25px 2px 15px 2px; }
   .scroll-header .logo {
+    transition: .5s;
     margin: 5px 0 0 0; }
     .scroll-header .logo .logo__big-text {
       color: #0eb493; }
