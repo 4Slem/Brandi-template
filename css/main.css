@@ -11,9 +11,10 @@
     color: #fff;
     font-family: 'Open Sans';
     padding: 35px 2px 25px 2px;
-    margin: 0 15px; }
+    margin: 0 15px;
+    border-top: 1px solid transparent;
+    transition: .5s; }
     .header__nav a:hover {
-      padding-top: 34px;
       border-top: 1px solid #32b0ee; }
   @media screen and (max-width: 800px) {
     .header__nav {
@@ -171,13 +172,9 @@ body {
   background-color: #fff;
   box-shadow: 0 0 3px #999; }
   .scroll-header .nav a {
-    transition: color .5s;
     color: #062033;
     padding: 25px 2px 15px 2px; }
-    .scroll-header .nav a:hover {
-      padding-top: 24px; }
   .scroll-header .logo {
-    transition: .5s;
     margin: 5px 0 0 0; }
     .scroll-header .logo .logo__big-text {
       color: #0eb493; }
