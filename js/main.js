@@ -10,11 +10,11 @@
 	window.onscroll = function() {
 		//Навігація
   		var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  		if(scrolled > (sliderHeight-50)){
+  		if(scrolled > (sliderHeight-65)){
   			elem.className = "header scroll-header";
 
   		}
-  		else{
+  		else if(scrolled < (sliderHeight-40)){
   			elem.className = "header";
   		}
 

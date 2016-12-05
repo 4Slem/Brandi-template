@@ -240,7 +240,8 @@ body {
   float: left; }
   @media screen and (max-width: 800px) {
     .wrapper-block {
-      width: 100%; } }
+      width: 100%;
+      margin: 20px 0; } }
   .wrapper-block .wrapper-block__ico {
     width: 40px;
     height: 100%;
@@ -249,6 +250,7 @@ body {
   .wrapper-block .wrapper-block__header {
     font-family: 'OpenSans-Semibold';
     font-size: 20px;
+    margin-bottom: 20px;
     color: #062033; }
   .wrapper-block .wrapper-block__text {
     font-family: 'Open Sans';
@@ -286,10 +288,11 @@ body {
   width: 25%;
   float: left;
   overflow: hidden;
-  margin-top: 50px; }
+  margin: 50px 0; }
   @media screen and (max-width: 800px) {
     .block-team {
-      width: 50%; } }
+      width: 50%;
+      margin: 10px 0; } }
   @media screen and (max-width: 500px) {
     .block-team {
       width: 100%; } }
@@ -319,3 +322,104 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.contact-form {
+  margin-top: 80px; }
+  @media screen and (max-width: 800px) {
+    .contact-form .contact {
+      display: none; }
+    .contact-form .form {
+      width: 100%; }
+      .contact-form .form h3 {
+        text-align: center; }
+    .contact-form .contact-ico {
+      width: 100%;
+      text-align: center;
+      padding-top: 20px; }
+      .contact-form .contact-ico a {
+        display: inline-block; } }
+
+.contact {
+  float: left;
+  width: 25%; }
+  .contact h3 {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    padding-bottom: 20px;
+    color: #062033; }
+  .contact p {
+    font-size: 13px;
+    font-family: 'Open Sans';
+    color: #6a737b;
+    line-height: 24px; }
+
+.form {
+  float: left;
+  width: 70%;
+  padding: 0 40px;
+  box-sizing: border-box; }
+  .form h3 {
+    font-size: 24px;
+    font-family: 'OpenSans-Bold';
+    color: #062033;
+    padding-bottom: 20px; }
+  .form input:hover, .form input:active {
+    border-bottom: 1px solid #062033;
+    color: #062033; }
+  .form button:hover, .form button:active, .form button:visited {
+    box-shadow: none;
+    outline: none;
+    color: #062033; }
+  .form button {
+    cursor: pointer;
+    margin: 20px 0;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 16px; }
+    .form button i {
+      margin-right: 10px;
+      color: #0eb493; }
+
+.form input {
+  color: #666;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  transition: .3s; }
+
+.input-name {
+  float: left;
+  width: 48%;
+  margin-right: 4%; }
+  .input-name input {
+    width: 100%; }
+
+.input-email {
+  float: left;
+  width: 48%; }
+  .input-email input {
+    width: 100%; }
+
+.form .input-message input {
+  width: 100%; }
+
+.contact-ico {
+  padding-top: 50px;
+  float: left;
+  width: 5%; }
+  .contact-ico a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: #ccc;
+    transition: .3s; }
+  .contact-ico a:hover {
+    color: #062033; }
