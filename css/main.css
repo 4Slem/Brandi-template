@@ -230,6 +230,9 @@ body {
 
 .wrapper {
   margin: 0 10%; }
+  @media screen and (max-width: 500px) {
+    .wrapper {
+      margin: 0 5%; } }
 
 .wrapper-contant {
   float: left; }
@@ -302,6 +305,9 @@ body {
       padding: 0 20px;
       width: 100%;
       height: auto; }
+      @media screen and (max-width: 500px) {
+        .block-team .team-img img {
+          padding: 0; } }
   .block-team .team-description {
     text-align: center; }
     .block-team .team-description h3 {
@@ -365,7 +371,8 @@ body {
     padding-bottom: 20px; }
   .form input:hover, .form input:active {
     border-bottom: 1px solid #062033;
-    color: #062033; }
+    color: #062033;
+    border-radius: none; }
   .form button:hover, .form button:active, .form button:visited {
     box-shadow: none;
     outline: none;
